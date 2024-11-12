@@ -387,6 +387,7 @@ spec:
         value: $(tasks.build-image-index.results.IMAGE_URL)
       runAfter:
       - build-image-index
+      timeout: 0h2m
       taskRef:
         params:
         - name: name
